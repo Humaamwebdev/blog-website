@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome cdn link 5.10.0  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" type="image/x-icon"
+        href="data:image/png;base64,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" />
+    <!-- css link  -->
+    <link rel="stylesheet" href="style.css">
+    <title>Blog Design</title>
+</head>
+
+<body>
+
+    <!-- header section start  -->
+    <header>
+
+        <a href="#" class="logo"><span>B</span>logger</a>
+
+        <nav>
+            <a href="#home">Banner</a>
+            <a href="#post">My Post</a>
+            <a href="#contact">Contact Me</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bar"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+        </div>
+
+        <div class="search-form">
+            <input type="text" class="search-box" placeholder="Search here..">
+            <label for="search-box"><i class="fas fa-search"></i></label>
+        </div>
+
+    </header>
+    <!-- header section end  -->
+
+    <!-- home section start  -->
+    <section class="home" id="home">
+
+        <div class="content">
+            <h1>Explore the <br> Nature</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing <br> elit. Harum in qui laborum?</p>
+            <a href="#" class="btn">My Blogs</a>
+        </div>
+
+    </section>
+    <!-- home section end  -->
+
+
+    <!-- blogposts section start  -->
+    <section class="blog" id="post">
+
+        <div class="post-container">
+
+            <div class="post">
+                <img src="images/blog-1.jpg" alt="posts">
+                <div class="date">
+                    <i class="far fa-clock"></i>
+                    <p>29th dec, 2021</p>
+                </div>
+                <h3 class="title">Blog Title goes here..</h3>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet consectetur
+                    reprehenderit, a necessitatibus ad aperiam velit voluptas impedit ipsam distinctio quia dolore
+                    aliquid cumque fugit non, tenetur consequatur quae! Possimus quos molestias est aperiam
+                    assumenda ducimus repudiandae saepe fuga quae. Vel alias quaerat excepturi sequi ducimus
+                    amet incidunt ullam sit.</p>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit eos corporis nulla
+                    iste natus quo quod architecto! Labore, deserunt tempora.</p>
+                <div class="links">
+                    <a href="#" class="user">
+                        <i class="fas fa-users"></i>
+                        <span>By Admin</span>
+                    </a>
+
+                    <a href="#">
+                        <i class="fas fa-comments"></i>
+                        <span>(45)</span>
+                    </a>
+
+                    <a href="#">
+                        <i class="fas fa-share-square"></i>
+                        <span>(28)</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="post">
+                <img src="images/blog-2.jpg" alt="posts">
+                <div class="date">
+                    <i class="far fa-clock"></i>
+                    <p>29th dec, 2021</p>
+                </div>
+                <h3 class="title">Blog Title goes here..</h3>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet consectetur
+                    reprehenderit, a necessitatibus ad aperiam velit voluptas impedit ipsam distinctio quia dolore
+                    aliquid cumque fugit non, tenetur consequatur quae! Possimus quos molestias est aperiam
+                    assumenda ducimus repudiandae saepe fuga quae. Vel alias quaerat excepturi sequi ducimus
+                    amet incidunt ullam sit.</p>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit eos corporis nulla
+                    iste natus quo quod architecto! Labore, deserunt tempora.</p>
+                <div class="links">
+                    <a href="#" class="user">
+                        <i class="fas fa-users"></i>
+                        <span>By Admin</span>
+                    </a>
+
+                    <a href="#">
+                        <i class="fas fa-comments"></i>
+                        <span>(45)</span>
+                    </a>
+
+                    <a href="#">
+                        <i class="fas fa-share-square"></i>
+                        <span>(28)</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="post">
+                <img src="images/blog-3.jpg" alt="posts">
+                <div class="date">
+                    <i class="far fa-clock"></i>
+                    <p>29th dec, 2021</p>
+                </div>
+                <h3 class="title">Blog Title goes here..</h3>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet consectetur
+                    reprehenderit, a necessitatibus ad aperiam velit voluptas impedit ipsam distinctio quia dolore
+                    aliquid cumque fugit non, tenetur consequatur quae! Possimus quos molestias est aperiam
+                    assumenda ducimus repudiandae saepe fuga quae. Vel alias quaerat excepturi sequi ducimus
+                    amet incidunt ullam sit.</p>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit eos corporis nulla
+                    iste natus quo quod architecto! Labore, deserunt tempora.</p>
+                <div class="links">
+
+                    <a href="#" class="user">
+                        <i class="fas fa-users"></i>
+                        <span>By Admin</span>
+                    </a>
+
+                    <a href="#" class="icon">
+                        <i class="fas fa-comments"></i>
+                        <span>(45)</span>
+                    </a>
+
+                    <a href="#" class="icon">
+                        <i class="fas fa-share-square"></i>
+                        <span>(28)</span>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="side">
+
+            <div class="side-container">
+
+                <div class="box">
+                    <h3 class="title">About Me</h3>
+                    <div class="about">
+                        <img src="images/user.png" alt="">
+                        <h3>Humaam Anwar</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum aut ipsa vel!</p>
+                        <div class="follow">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin"></i>
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- blogposts section end  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- custom js file link  -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
